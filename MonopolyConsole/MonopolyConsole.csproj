@@ -10,8 +10,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\monocle-client\MonopolyRetreat.Dto\MonopolyRetreat.Dto.csproj" />
-    <ProjectReference Include="..\..\monocle-client\MonopolyRetreat.Monocle\MonopolyRetreat.Monocle.csproj" />
+    <ProjectReference Include="..\MonopolyRetreat.Dto\MonopolyRetreat.Dto.csproj" />
+    <ProjectReference Include="..\MonopolyRetreat.Monocle\MonopolyRetreat.Monocle.csproj" />
   </ItemGroup>
 
 </Project>
