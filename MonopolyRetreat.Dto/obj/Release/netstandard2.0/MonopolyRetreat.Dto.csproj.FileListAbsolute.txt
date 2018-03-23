@@ -1,0 +1,9 @@
+C:\Users\janwi\Desktop\code retreat\MonopolyConsole\MonopolyRetreat.Dto\bin\Release\netstandard2.0\MonopolyRetreat.Dto.deps.json
+C:\Users\janwi\Desktop\code retreat\MonopolyConsole\MonopolyRetreat.Dto\bin\Release\netstandard2.0\MonopolyRetreat.Dto.dll
+C:\Users\janwi\Desktop\code retreat\MonopolyConsole\MonopolyRetreat.Dto\bin\Release\netstandard2.0\MonopolyRetreat.Dto.pdb
+C:\Users\janwi\Desktop\code retreat\MonopolyConsole\MonopolyRetreat.Dto\obj\Release\netstandard2.0\MonopolyRetreat.Dto.csprojResolveAssemblyReference.cache
+C:\Users\janwi\Desktop\code retreat\MonopolyConsole\MonopolyRetreat.Dto\obj\Release\netstandard2.0\MonopolyRetreat.Dto.csproj.CoreCompileInputs.cache
+C:\Users\janwi\Desktop\code retreat\MonopolyConsole\MonopolyRetreat.Dto\obj\Release\netstandard2.0\MonopolyRetreat.Dto.AssemblyInfoInputs.cache
+C:\Users\janwi\Desktop\code retreat\MonopolyConsole\MonopolyRetreat.Dto\obj\Release\netstandard2.0\MonopolyRetreat.Dto.AssemblyInfo.cs
+C:\Users\janwi\Desktop\code retreat\MonopolyConsole\MonopolyRetreat.Dto\obj\Release\netstandard2.0\MonopolyRetreat.Dto.dll
+C:\Users\janwi\Desktop\code retreat\MonopolyConsole\MonopolyRetreat.Dto\obj\Release\netstandard2.0\MonopolyRetreat.Dto.pdb

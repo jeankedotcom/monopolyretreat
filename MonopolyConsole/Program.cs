@@ -15,7 +15,8 @@ namespace MonopolyConsole
                 //if (key != null && key.KeyChar == 's')
                 //    break;
                 botje.PerformNextStep();
-                Console.WriteLine(JsonConvert.SerializeObject(botje.GetStats()));
+                //Console.WriteLine(JsonConvert.SerializeObject(botje.GetStats()));
+                Console.Write(".");
                 //key = Console.ReadKey();
             }
         }

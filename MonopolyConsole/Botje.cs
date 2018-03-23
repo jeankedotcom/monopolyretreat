@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using MonopolyRetreat.Dto;
 using MonopolyRetreat.Monocle;
@@ -7,10 +8,6 @@ namespace MonopolyConsole
 {
     internal class Botje
     {
-        private const int MinHouses = 5;
-        private const int MinSkyscrapers = 3;
-        private const int MinShop = 10000;
-
         private readonly MonocleClient _monocleClient;
         private readonly string _token;
 
@@ -25,17 +22,51 @@ namespace MonopolyConsole
             return _monocleClient.GetMyOverview();
         }
 
+        private const int MinHouses = 10;
+        private const int MinSkyscrapers = 5;
+        private const int MinShop = 100;
+        private const int MinOlbBuilding = 10;
+        private const int MinLargeBuilding = 5;
+        private readonly Random _random = new Random();
+
+
         public void PerformNextStep()
         {
-            TryBuy(PropertyType.House, MinHouses);
-            if (GetFromType(PropertyType.House) < MinHouses)
-                return;
+            var types = new List<PropertyType>
+            {
+                PropertyType.CornerShop,
+                PropertyType.Shop,
+                PropertyType.Petrol,
+                PropertyType.SkyScraper
+            };
 
-            TryBuy(PropertyType.SkyScraper, MinSkyscrapers);
-            if (GetFromType(PropertyType.SkyScraper) < MinSkyscrapers)
-                return;
+            
+            TryBuy(types[_random.Next(0, 4)], 1000);
+            TryBuy(types[_random.Next(0, 4)], 1000);
+            TryBuy(types[_random.Next(0, 4)], 1000);
+            TryBuy(types[_random.Next(0, 4)], 1000);
+            TryBuy(types[_random.Next(0, 4)], 1000);
+            TryBuy(types[_random.Next(0, 4)], 1000);
 
-            TryBuy(PropertyType.Shop, MinShop);
+            //TryBuy(PropertyType.House, MinHouses);
+            //if (GetFromType(PropertyType.House) < MinHouses)
+            //    return;
+
+            //TryBuy(PropertyType.Shop, MinShop);
+            //if (GetFromType(PropertyType.Shop) < MinShop)
+            //    return;
+
+            //TryBuy(PropertyType.OldBuilding, MinOlbBuilding);
+            //if (GetFromType(PropertyType.OldBuilding) < MinOlbBuilding)
+            //    return;
+
+            //TryBuy(PropertyType.LargeBuilding, MinLargeBuilding);
+
+            //TryBuy(PropertyType.SkyScraper, MinSkyscrapers);
+            //if (GetFromType(PropertyType.SkyScraper) < MinSkyscrapers)
+            //    return;
+
+            //TryBuy(PropertyType.Shop, MinShop);
         }
 
         private void TryBuy(PropertyType type, int minimum)

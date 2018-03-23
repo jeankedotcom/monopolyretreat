@@ -1,0 +1,16 @@
+C:\Users\janwi\Desktop\code retreat\MonopolyConsole\MonopolyConsole\bin\Release\netcoreapp2.0\MonopolyConsole.deps.json
+C:\Users\janwi\Desktop\code retreat\MonopolyConsole\MonopolyConsole\bin\Release\netcoreapp2.0\MonopolyConsole.runtimeconfig.json
+C:\Users\janwi\Desktop\code retreat\MonopolyConsole\MonopolyConsole\bin\Release\netcoreapp2.0\MonopolyConsole.runtimeconfig.dev.json
+C:\Users\janwi\Desktop\code retreat\MonopolyConsole\MonopolyConsole\bin\Release\netcoreapp2.0\MonopolyConsole.dll
+C:\Users\janwi\Desktop\code retreat\MonopolyConsole\MonopolyConsole\bin\Release\netcoreapp2.0\MonopolyConsole.pdb
+C:\Users\janwi\Desktop\code retreat\MonopolyConsole\MonopolyConsole\bin\Release\netcoreapp2.0\MonopolyRetreat.Dto.dll
+C:\Users\janwi\Desktop\code retreat\MonopolyConsole\MonopolyConsole\bin\Release\netcoreapp2.0\MonopolyRetreat.Monocle.dll
+C:\Users\janwi\Desktop\code retreat\MonopolyConsole\MonopolyConsole\bin\Release\netcoreapp2.0\MonopolyRetreat.Dto.pdb
+C:\Users\janwi\Desktop\code retreat\MonopolyConsole\MonopolyConsole\bin\Release\netcoreapp2.0\MonopolyRetreat.Monocle.pdb
+C:\Users\janwi\Desktop\code retreat\MonopolyConsole\MonopolyConsole\obj\Release\netcoreapp2.0\MonopolyConsole.csprojResolveAssemblyReference.cache
+C:\Users\janwi\Desktop\code retreat\MonopolyConsole\MonopolyConsole\obj\Release\netcoreapp2.0\MonopolyConsole.csproj.CoreCompileInputs.cache
+C:\Users\janwi\Desktop\code retreat\MonopolyConsole\MonopolyConsole\obj\Release\netcoreapp2.0\MonopolyConsole.AssemblyInfoInputs.cache
+C:\Users\janwi\Desktop\code retreat\MonopolyConsole\MonopolyConsole\obj\Release\netcoreapp2.0\MonopolyConsole.AssemblyInfo.cs
+C:\Users\janwi\Desktop\code retreat\MonopolyConsole\MonopolyConsole\obj\Release\netcoreapp2.0\MonopolyConsole.csproj.CopyComplete
+C:\Users\janwi\Desktop\code retreat\MonopolyConsole\MonopolyConsole\obj\Release\netcoreapp2.0\MonopolyConsole.dll
+C:\Users\janwi\Desktop\code retreat\MonopolyConsole\MonopolyConsole\obj\Release\netcoreapp2.0\MonopolyConsole.pdb
