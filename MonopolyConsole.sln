@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2011
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonopolyConsole", "MonopolyConsole\MonopolyConsole.csproj", "{C2904646-8DEC-4ECA-870C-59B976E474B6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MonopolyRetreat.Dto", "..\monocle-client\MonopolyRetreat.Dto\MonopolyRetreat.Dto.csproj", "{2ECB5D1D-2065-4055-992B-E1A2255E89EB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MonopolyRetreat.Monocle", "..\monocle-client\MonopolyRetreat.Monocle\MonopolyRetreat.Monocle.csproj", "{FD2E4836-B9E1-4B85-BB56-D3E1C8CF896E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2904646-8DEC-4ECA-870C-59B976E474B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2904646-8DEC-4ECA-870C-59B976E474B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2904646-8DEC-4ECA-870C-59B976E474B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2904646-8DEC-4ECA-870C-59B976E474B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2ECB5D1D-2065-4055-992B-E1A2255E89EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ECB5D1D-2065-4055-992B-E1A2255E89EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ECB5D1D-2065-4055-992B-E1A2255E89EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ECB5D1D-2065-4055-992B-E1A2255E89EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD2E4836-B9E1-4B85-BB56-D3E1C8CF896E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD2E4836-B9E1-4B85-BB56-D3E1C8CF896E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD2E4836-B9E1-4B85-BB56-D3E1C8CF896E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD2E4836-B9E1-4B85-BB56-D3E1C8CF896E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E1EB2D2E-92F9-42C0-9B37-20AAA4A6C4BA}
+	EndGlobalSection
+EndGlobal
