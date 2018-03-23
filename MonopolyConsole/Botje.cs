@@ -1,17 +1,18 @@
-﻿using MonopolyRetreat.Dto;
-using MonopolyRetreat.Monocle;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Linq;
-using System.Text;
-using Newtonsoft.Json;
+using MonopolyRetreat.Dto;
+using MonopolyRetreat.Monocle;
 
 namespace MonopolyConsole
 {
-    class Botje
+    internal class Botje
     {
-        private readonly string _token;
+        private const int MinHouses = 5;
+        private const int MinSkyscrapers = 3;
+        private const int MinShop = 10000;
+
         private readonly MonocleClient _monocleClient;
+        private readonly string _token;
 
         public Botje(string token)
         {
@@ -23,25 +24,62 @@ namespace MonopolyConsole
         {
             return _monocleClient.GetMyOverview();
         }
+
         public void PerformNextStep()
         {
-            var all = _monocleClient.GetAllProperties();
-            Console.WriteLine(JsonConvert.SerializeObject(all, Formatting.Indented));
-            var buyableProperties = _monocleClient.GetBuyableProperties();
-            if (buyableProperties == null) { return; }
-            if (buyableProperties.Any())
+            TryBuy(PropertyType.House, MinHouses);
+            if (GetFromType(PropertyType.House) < MinHouses)
+                return;
+
+            TryBuy(PropertyType.SkyScraper, MinSkyscrapers);
+            if (GetFromType(PropertyType.SkyScraper) < MinSkyscrapers)
+                return;
+
+            TryBuy(PropertyType.Shop, MinShop);
+        }
+
+        private void TryBuy(PropertyType type, int minimum)
+        {
+            while (GetFromType(type) < minimum)
             {
-                var buyableProperty = buyableProperties.OrderByDescending(b => b.Value).FirstOrDefault();
+                if (!Buy(type))
+                    break;
+            }
+        }
+
+        private bool Buy(PropertyType type)
+        {
+            var buyableProperties = _monocleClient.GetBuyableProperties();
+            var stats = _monocleClient.GetMyOverview();
+
+            var candidates = from p in buyableProperties
+                where p.Value < stats.AvailableMoney && p.PropertyType == type
+                orderby p.Value descending
+                select p;
+
+            foreach (var prop in candidates)
                 try
                 {
-                    _monocleClient.BuyProperty(buyableProperty.X, buyableProperty.Y);
+                    _monocleClient.BuyProperty(prop.X, prop.Y);
+                    return true;
                 }
                 catch (Exception e)
                 {
                     // aankoop property is om een of andere reden niet gelukt. Eigen retry logica
                 }
-            }
+
+            return false;
+        }
+
+        private int GetFromType(PropertyType type)
+        {
+            var all = _monocleClient.GetAllProperties();
+            var stats = _monocleClient.GetMyOverview();
+
+            var fromType = from p in all
+                where p.PropertyType == type && stats.Properties.Any(pr => pr.X == p.X && pr.Y == p.Y)
+                select p;
+            return fromType.Count();
         }
     }
 }
-

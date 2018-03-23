@@ -11,12 +11,12 @@ namespace MonopolyConsole
 
             while (true)
             {
-                ConsoleKeyInfo key;
-                if (key != null && key.KeyChar == 's')
-                    break;
+                //ConsoleKeyInfo key;
+                //if (key != null && key.KeyChar == 's')
+                //    break;
                 botje.PerformNextStep();
                 Console.WriteLine(JsonConvert.SerializeObject(botje.GetStats()));
-                key = Console.ReadKey();
+                //key = Console.ReadKey();
             }
         }
     }
